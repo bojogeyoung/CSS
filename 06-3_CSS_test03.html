@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="kot">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>표스타일연습2</title>
+
+    <style>
+        body{
+            margin: 10px 50px;    
+
+        }
+        table{
+            width : 300px;
+            border-collapse: collapse;    
+            
+        }
+
+        tr,th,td{padding: 10px;
+            text-align: center;
+        }
+
+        thead, tfoot {
+            color: yellow;
+            background-color: rgb(131, 130, 130);
+        }
+        /* p343.구조 가상클래스 nth-child */
+       tbody tr:nth-child(2n){
+        background-color : #c8f1fd;
+       }
+        
+
+       tbody tr:nth-child(2n+1){
+        background-color : #eaf5f8;
+       }
+ 
+       td:nth-child(2n){
+        color: red;
+       }
+         
+    </style>
+</head>
+
+<body>
+
+    <h2>1학기 성적</h2>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+
+        <tbody>
+         <tr>
+                <td>황기태</td>
+                <td>80</td>
+                <td>70</td>
+         </tr>
+
+         <tr>
+            <td>이재문</td>
+            <td>95</td>
+            <td>99</td>
+         </tr>
+
+         <tr>
+            <td>이병은</td>
+            <td>85</td>
+            <td>90</td>
+         </tr>
+
+         <tr>
+            <td>김남윤</td>
+            <td>50</td>
+            <td>40</td>
+         </tr>
+
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>합</th>
+                <th>310</th>
+                <th>249</th>
+            </tr>
+        </tfoot>
+
+        
+
+    </table>
+
+
+</body>
+
+</html>

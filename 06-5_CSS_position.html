@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     
+    <title>p.282 position_absolute</title>
+
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        
+        /* position : absolute를 사용하려면 부모 요소에 position : relative라고 지정해야 함 */
+
+        p{
+            width: 500px;
+            height: 200px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            line-height: 2;
+        }
+
+        #static{
+            position: static;
+        }
+
+        #relative-1{    
+            position: relative; 
+        
+        }
+
+        #relative-2{
+            position: relative; 
+            left: 100px;
+            top : -50px;
+        }
+
+        #fixed{
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+            position: fixed;
+            /* 브라우저 창을 기준으로 위치를 픽스하는 것 */
+            right: 30px;
+            top : 30px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <p id="static">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    <p id="relative-1"> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,</p>
+    <p id="relative-2"> The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+    <p id="fixed"></p>
+    
+</body>
+</html>

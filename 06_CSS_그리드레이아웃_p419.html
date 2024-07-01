@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <style>
+     .container{
+        width: 900px;
+        height: 300px;
+        background-color: rgb(238, 245, 243);
+        border: 1px solid #000;
+        display: flex; /* 이것만 해도 가로정렬이 됨? 인라인요소? */
+     }
+
+     .container div{
+        width: 30%;
+        height: 100%;
+        line-height: 5em;
+        background-color: #000;
+        color: #fff;
+        font-size: 2em;
+        margin-right: 10px;
+        border: 1px solid #fff;
+         
+
+     }
+
+     #opt1{flex-direction: row;}
+     #opt2{flex-direction: row-reverse;}
+     #opt2{flex-direction: column;}
+     #opt2{flex-direction: column-reverse;}
+
+  </style>
+</head>
+<body>
+  <!-- 그리드 레이아웃 특징
+   1. 시각적으로 안정된 디자인 제작가능
+   2. 업데이트가 편한 웹디자인 구성
+   3. 요소를 자유롭게 배치
+   
+   플렉서블 박스 레이아웃, CSS그리드 레이아웃-->
+
+   <div class="container" id="opt1">
+      <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     
+  </div>
+
+   <div class="container" id="opt2">
+      <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     
+  </div>
+
+   <div class="container" id="opt3">
+      <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     
+  </div>
+
+   <div class="container" id="opt4">
+      <div>1</div>
+     <div>2</div>
+     <div>3</div>
+      
+  </div>
+
+   
+</body>
+</html>

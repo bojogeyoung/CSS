@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>기본 선택자 조합</title>
+    
+    <style>
+        .header {
+            color: red;
+           
+        }
+
+        div.header {
+            color: blue;
+           
+        }
+        /* div에 적용된 클래스중 header란 이름을 가진 클래스 */
+
+        /* h2,h3 {
+            color: green;
+        } */
+
+        
+ 
+    </style>
+</head>
+
+<body>
+
+    <p class="header">text-1 : header 클래스 적용으로 red</p>
+    <p>text-2 : 아무런 css도 적용되지 않음</p>
+    <div class="header">text-3 : div.header 클래스 적용으로 blue 출력</div>
+  
+    <h2>text-4 : h1,h2 셀렉터 적용으로 green 출력</h2>
+    <h2>text-5 : h1,h2 셀렉터 적용으로 green 출력</h2>
+    <h3>text-6 : h1,h2 셀렉터 적용으로 green 출력</h3>
+
+
+</body>
+
+</html>

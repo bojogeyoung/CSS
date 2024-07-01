@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     
+    <title>input태그_p.139</title>
+
+    <style>
+
+            
+        
+        .sub{
+            margin: 10px 50px;
+            width: 100px;
+            height: 30px;          
+        }
+ 
+  
+    </style>
+</head>
+<body>
+    <h1>레드향 주문하기 </h1>
+    <form>
+        <fieldset>
+            <legend>로그인 정보 </legend>
+            <label>아이디 : <input type="text" id="user_id" size="10" ></label>
+            <!-- 입력란 가까이에 아이디 같이 붙여 놓은 텍스트를 말함, label 태그를 사용하면
+                 폼 요소와 레이블 텍스트가 서로 연결되어 되었다는 것을 웹 브라우저가 알 수 있다. -->
+            <label>비밀번호: <input type="password" id="user_pw" size=""10  ></label>
+            <input type="submit" value="로그인">
+            <!-- submit : 전송정보 -->
+            
+        </fieldset>
+    </form>
+
+    <br>
+    <!-- input type : number(스크린 숫자), range(스크린 막대 숫자) -->
+
+    <form action="">
+        <fieldset>
+            <legend> 상품 선택</legend>
+            <p><b>주문할 상품을 선택해 주세요</b></p>
+            <ul>
+                <li><label for=""><input type="checkbox" value="s_3">선물용 3kg</label>
+                    <input type="number" min="0" max="5">개 (최대 5개)</li>
+                <li><label for=""><input type="checkbox">선물용 5kg</label>
+                    <input type="number" min="0" max="3">개 (최대 3개) </li>
+        
+
+                <li><label for=""><input type="checkbox">가정용 3kg</label>
+                    <input type="range" min="0" max="5">개 (최대 5개)</li>
+                <li><label for=""><input type="checkbox">가정용 5kg</label>
+                    <input type="range" min="0" max="3" value="3" >개 (최대 3개)</li>
+            </ul>
+           
+            
+           
+            
+
+            <p><b>포장 선택</b></p>
+            <label for=""><input type="radio" name="gift">선물 포장</label>
+            <label for=""><input type="radio" name="gift">선물 포장 안함</label>
+            <!-- name속성은 PHP같은 웹 프로그래밍에서 폼 요소를 제어할 때 자주 사용
+                 라디오 버튼에서 하나의 버튼만 선택할 수 있게 하려면 모든 라디오 버튼의 name 값을 지정해야함  -->
+        </fieldset>
+    </form>
+
+
+  
+
+      
+
+
+
+
+
+
+
+    <br>
+    <form>
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li><label>이름 <input type="text" id="user_name" size="10"></label></li>
+                <li><label>배송 주소 <input type="text" id="user_address" size="30"></label></li>
+                <li><label>이메일 <input type="emal" id="user_email" size="20"></label></li>
+                <li><label>연락처 <input type="tel" ></label></li>
+                
+                <input type="submit" value="확인" class="sub">
+         
+            </ul>
+
+
+        </fieldset>
+
+
+    </form>
+    
+     
+   
+
+
+
+</body>
+</html>

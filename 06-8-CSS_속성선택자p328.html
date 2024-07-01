@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+    <meta charset="UTF-8">
+      
+    <title>Document</title>
+    <style>
+
+
+        [class ~= button] {/* 여러 값 중 특정 속성값이 포함된 속성 요소 선택 */
+                           /* class 속성 값에 button이 포함된 요소를 찾는 선택자 */ 
+
+            box-shadow:  rgba(0, 0, 0,0.4) 4px 4px;
+            border-radius: 5PX;
+        }
+
+         
+        ul li {
+            float: left;
+            list-style: none;
+            
+            text-align: center;
+        }
+
+        a{
+            width: 100px;
+            background-color: #aaa;
+            border: 1px solid #000;
+           text-decoration: none;
+        }
+
+        ul li:hover{
+            background-color: #fff;
+            color: blue;
+        }
+
+    </style>
+ </head>
+ <body>
+    
+    <ul>
+        <li><a href="#" class="flat">메뉴 1</a></li>
+        <li><a href="#" class="flat">메뉴 2</a></li>
+        <li><a href="#" class="button">메뉴 3</a></li>
+        <li><a href="#" class="flat button">메뉴 4</a></li>
+    </ul>
+ </body>
+ </html>

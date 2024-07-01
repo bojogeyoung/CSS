@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid #000;
+            margin: 10px;
+            width: 150px;
+            height: 100px;
+            display: inline-block;
+
+        }
+
+        /* 테두리 두께는 : thick 두껍게, medium 중간, thin 가늘게 */
+ 
+        #box1{border-width: 2px;  /* 전체 동일하게 */
+              border-color : red;} 
+       
+        #box2{border-width: thick thin; /* 상하 : 두껍게, 좌우 : 가늘게 */
+              border-bottom-color: blue;}
+        
+        #box3{border-width: thick thin thin;/* top, right, bottom 마지막 생략된건 right값과 동일 */
+             border-top-color : green;}
+        
+        #box4{border-width: 10px 5px 5px 10px;
+              border-top-color: #f53bc6;
+              border-right-color : #eaa;    
+              border-left-color: #30d6db;
+              }
+
+       #box5{border-width: medium thick medium thin ;
+             border-bottom-color:#304adb;
+             border-top-color: #c9eb0e;
+             box-shadow: 5px 3px 10px #000;
+             border-style:ridge;
+       }       
+
+ 
+
+    </style>
+</head>
+<body>
+ 
+ <div id="box1"></div>
+ <div id="box2"></div>
+ <div id="box3"></div>
+ <div id="box4"></div>
+ <div id="box5"></div>
+ 
+
+ 
+    
+</body>
+</html>

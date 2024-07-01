@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 예제4 </title>
+    <style>
+        ul {
+            list-style-type: none;
+
+        }
+
+        li {
+
+            margin-bottom: 10px;
+
+
+        }
+
+        #memo {
+            width: 300px;
+            height: 50px;
+        }
+
+
+        .bar {
+
+            width: 250px;
+
+
+        }
+
+        .btn {
+
+            margin: 20px 80px;
+
+        }
+
+
+        #shipping li label {
+            width: 80px;
+            display:inline-block;
+            text-align: left;
+            text-align: center;
+            /*float: left;*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>레드향 주문하기</h1>
+
+    <form action="">
+        <fieldset>
+            <legend><b>상품 선택</b></legend>
+
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+
+            <ul>
+                <li>
+                    <label for="prod1"><input type="checkbox" value="s_5"></label>
+                    <select name="" id="prod1">
+                        <option value="special_3" selected> 선물용 3kg</option>
+                        <option value="special_5">선물용 5kg</option>
+                        <option value="family_3">가정용 3kg</option>
+                        <option value="family_5">가정용 5kg</option>
+                    </select>
+                    <input type="number" max="3" min="0">개 <small>(최대3개)</small></label> <br>
+                </li>
+                <li>
+                    <label for="prod2"><input type="checkbox" value="s_5"></label>
+                    <select name="" id="prod2">
+                        <option value="special_3" > 선물용 3kg</option>
+                        <option value="special_5"selected>선물용 5kg</option>
+                        <option value="family_3">가정용 3kg</option>
+                        <option value="family_5">가정용 5kg</option>
+                    </select>
+                    <input type="number" max="5" min="0">개 <small>(최대5개)</small></label> <br>
+                </li>
+                
+                <li>
+                    <label for="prod2"><input type="checkbox" value="s_5"></label>
+                    <select name="" id="prod2">
+                        <option value="special_3" > 선물용 3kg</option>
+                        <option value="special_5">선물용 5kg</option>
+                        <option value="family_3"selected>가정용 3kg</option>
+                        <option value="family_5">가정용 5kg</option>
+                    </select>
+                    <input type="number" max="5" min="0">개 <small>(최대3개)</small></label> <br>
+                </li>
+                <li>
+                    <label for="prod1"><input type="checkbox" value="s_5"></label>
+                    <select name="" id="prod1">
+                        <option value="special_3" > 선물용 3kg</option>
+                        <option value="special_5">선물용 5kg</option>
+                        <option value="family_3">가정용 3kg</option>
+                        <option value="family_5" selected>가정용 5kg</option>
+                    </select>
+                    <!-- label, select, option  => label에 for와 select id 동일하게 하기   -->
+                    <input type="number" max="5" min="0">개 <small>(최대5개)</small></label> <br>
+                </li>
+
+
+
+ 
+            </ul>
+
+
+            <input type="text" list="데이터 목록 id">
+            <datalist id="데이터 목록 id">
+                <option value="서버로 넘길 값1">선택 옵션1</option>
+                 <option value="서버로 넘길 값 2">선택 옵션 2</option>
+            </datalist>
+
+            <label for="prod2">포장여부</label>
+            <input type="text" id="prod2" list="pack">
+            <datalist id="pack">
+                <option value="package">선물 포장</option>
+                 <option value="no_packge">포장 안 함</option>
+            </datalist>
+
+            <p><b>포장 선택</b></p>
+            <input type="radio" name="gift" value="yes">선물 포장
+            <input type="radio" name="gift" value="no" checked>선물 포장 안함
+
+        </fieldset>
+
+        <fieldset>
+            <li>
+                <label for="prod1">상품 선택</label>
+                <select name="" id="prod1">
+                    <option value="special_3" selected> 선물용 3kg</option>
+                    <option value="special_5">선물용 5kg</option>
+                    <option value="family_3">가정용 3kg</option>
+                    <option value="family_5">가정용 5kg</option>
+                </select>
+                <input type="number" max="5" min="0">개 <small>(최대5개)</small></label> <br>
+            </li>
+
+        </fieldset>
+
+
+
+
+
+        <fieldset>
+            <legend><b>포장 선택</b></legend>
+            
+            <ul id="shipping">
+                <li>
+                    <label for="" class="txt"><span>이름</span></label>
+                    <input type="text" class="bar" autofocus required>
+                    <!-- autofocus는 한개만 적용이 가능?! -->
+                </li>
+                <li>
+                    <label for="" class="txt">배송주소</label>
+                    <input type="text" class="bar" required>
+                    <!-- required :  submit 클릭시 필수정보 입력 체크 -->
+                </li>
+                <li>
+                    <label for="" class="txt"><span>이메일</span></label>
+                    <input type="email" class="bar">
+                </li>
+                <li>
+                    <label for="" class="txt"><span>연락처</span></label>
+                    <input type="tel" class="bar" placeholder="하이픈 빼고 입력하기" required>
+                    <!-- value와 차이는 글씨색이 좀 더 연하다 -->
+                </li>
+                <li>
+                    <label for="" class="txt">배송지정</label>
+                    <input type="date" class="bar" readonly>
+                    <samll>(주문일로부터 최소 3일 이후)</samll>
+                    <!-- readonly :  읽기 전용 필드라서 텍스트 삽입불가 -->
+                </li>
+                <li>
+                    <label for="" class="txt">메모</label>
+                    <textarea name="" id="memo" cols="40" rows="4"></textarea>
+                    <!-- textarea :  텍트스영역, 여러줄 텍스트 입력, 게시판 글 입력양식, 사용자 약관 등 cols = 가로 몇줄, rows = 세로 몇줄-->
+                </li>
+            </ul>
+
+
+        </fieldset>
+
+        <input type="submit" value="주문하기" class="btn">
+        <input type="reset" value="취소하기" class="btn">
+    </form>
+
+
+</body>
+
+</html>

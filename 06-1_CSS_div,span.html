@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>div 태그</title>
+    <!-- title 아래에 style 태그 둘것 -->
+    <!-- 시맨틱 태그(구조설계)가 나오기전에는 다 div로 묶었었음 -->
+
+    <style>
+        .wrap div {
+            /* wrap 클래스 안에  div 선택자를 의미? */
+            width: 100%;
+            border: 1px solid;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            padding: 20px;
+            font-size: 17px;
+            font-weight: 800;
+        }
+
+        p span {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h3>div 태그</h3>
+    <hr>
+    <div class="wrap">
+        <div>컨텐츠1</div>
+        <div>컨텐츠2</div>
+        <div>컨텐츠3</div>
+    </div>
+
+    <p>나를 죽이지 못하는 고통은 나를 더 <span>강하게</span> 해줄 뿐이다.</p>
+
+</body>
+
+</html>

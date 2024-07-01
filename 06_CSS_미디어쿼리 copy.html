@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>미디어쿼리</title>
+    <!-- <link rel="stylesheet" media="print" href="css/test미디어쿼리.css"> -->
+    
+     
+    <style>
+         /* css 연결 또다른 방법  */
+        
+        @import url(css/test미디어쿼리.css) only screen and (min-width:768px) and(max-width: 1439px);
+
+        @media screen and (min-width:768px) and(max-width: 1439px){
+
+        }
+        /* 미디어유형 all : 모든 미디어 유형, print: 인쇄장치, screen:컴퓨터 스크린, tv:TV 등등  */
+        @media screen and (max-width :1024px){
+           body{
+            background: url(images/12.png);
+             
+           } 
+        }
+
+        @media screen and (max-width :768px){
+           body{
+            background: url(images/14.png);
+             
+           } 
+        }
+    
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>지원서</title>
+  <style>
+    #container{
+      margin: 0 auto;
+      width: 800px;
+      height: 700px;
+      box-sizing: border-box;
+      border: 1px solid #000;
+      overflow: hidden;
+      position: relative;
+    }
+
+    #box {
+      width: 100%;
+      border: 1px solid #ddd;
+      padding: 20px;
+      background-color: rgb(197, 215, 243);
+      opacity: 95%;
+      position: absolute;
+    }
+
+    img {
+      width: 800px;
+      height: 700px;
+      position: absolute;
+
+
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+
+
+    ul li label {
+      width: 50px;
+      float: left;
+    }
+
+    select {
+      margin-left: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <img src="images/computer.jpg" alt="">
+
+    <div id="box">
+
+      <h1>프런트엔드 개발자 지원서</h1>
+      <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+      <hr>
+
+      <form action="">
+        <fieldset>
+          <h3>개인정보</h3>
+
+          <ul>
+            <li><label for="">이름</label><input type="text" placeholder="공백없이 입력하세요" autofocus required></li>
+            <li><label for="">연락처 </label><input type="text"></li>
+          </ul>
+
+
+        </fieldset>
+
+        <fieldset>
+          <h3>지원 분야</h3>
+
+          <select name="" id="">
+            <option value="">자동차학과</option>
+            <option value="" selected>IOT프로그래밍</option>
+            <option value="">건축과</option>
+            <option value="">실내인테리어학과</option>
+
+          </select>
+
+          <ul>
+            <li><input type="radio" name="check" checked> 웹 퍼블리싱</li>
+            <li><input type="radio" name="check"> 웹 애플리케이션 개발</li>
+            <li><input type="radio" name="check"> 개발 환경 개선</li>
+          </ul>
+
+
+
+
+        </fieldset>
+
+        <fieldset>
+          <h3>지원동기</h3>
+          <textarea name="" id="" cols="40" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+
+
+        </fieldset>
+
+        <fieldset>
+          <input type="submit" value="접수하기">
+          <input type="reset" value="다시쓰기">
+        </fieldset>
+
+
+
+
+
+
+      </form>
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

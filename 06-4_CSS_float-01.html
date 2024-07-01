@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>p.270 float속성</title>
+    <style>
+        img{
+            /* float : left ; */
+            /* 왼쪽에 떠 있게  */
+
+            float : right ;
+            /* 오른쪽에 떠 있게  */
+            margin-left : 40px;
+            /* float속성은 그 다음에 넣는 넣는 다른 요소에도 적용되기 때문에
+               다음 요소에는 무효화를 시켜줘야 한다. clear 속성 사용 */
+            
+        }
+
+        p{
+            text-align: justify;
+        }
+       
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <img src="images/tree.png" alt="tree">
+    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+       <br> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text  
+      you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+
+    <!-- https://www.lipsum.com/ -->
+
+    
+
+</body>
+</html>

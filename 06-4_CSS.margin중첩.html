@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>마진중첩</title>
+    <style>
+      
+
+        /* 마진중첩현상 */
+        /* 마진과 마진이 만날 때는 값이 큰쪽으로 마진값이 겹쳐진다 */
+        /* 예) div에 모두 동일한 상하 마진값을 줬을 때 중간에 마진이 더해지는것이 아니라 겹쳐진다. 
+               큰값이 오면 큰값 위주로 겹쳐진다 */
+
+
+        div{
+            width: 200px;
+            height: 100px;
+            margin: 30px;
+
+        }
+
+        #box1{
+            background-color: rgb(0,77,243);
+        }
+        #box2{
+            background-color: rgb(255,72,0);
+        }
+        #box3{
+            background-color: rgb(18,219, 243);
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>배경색 범위 정하기</title>
+    <style>
+        .desc{
+            border: 5px dotted #222;
+            background-color: #ffd9a0;
+            width: 350px;
+            padding:20px;
+            margin-right: 20px;
+            float: left;
+        }
+
+         #clip-border{background-clip: border-box;}
+         #clip-padding{background-clip: padding-box;}
+         #clip-content{background-clip: content-box;}
+
+  
+    </style>
+</head>
+
+<body>
+
+      <div id="container">
+       
+        <div class="desc" id="clip-border">text 1</div>
+
+        <div class="desc" id="clip-padding">text 2</div>
+
+        <div class="desc" id="clip-content">text 3</div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

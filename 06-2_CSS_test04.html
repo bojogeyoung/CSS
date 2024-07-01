@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>리스트와 아이템에 배경색 입히기</title>
+    <style>
+      ul{
+        background : goldenrod;
+        padding: 10px 10px 10px 50px;
+        /*  위, 오른쪽, 아래, 왼쪽 */
+        list-style-position: inside;  /*  불릿을 아이템 안으로 배치 */
+        list-style-type: square; 
+        /*   none; upper-roman;  circle */  
+        /*  lower-alpha; decimal;  */
+       
+
+      }
+
+      ul li{
+        background : greenyellow;
+        margin-bottom : 5px;
+         
+        
+      }
+
+      
+      /* ul li ::before {content: '★ '; color:red;} */
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h2> 커피 메뉴</h2>
+    <hr>
+
+    <ul>
+        <li>Espresso</li>
+        <li>Cappuciino</li>
+        <li>Cafe Latte</li>
+    </ul>
+    
+</body>
+</html>

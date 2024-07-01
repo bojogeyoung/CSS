@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     
+    <title>input태그_p.138</title>
+
+    <style>
+        h1{
+            color: rgb(252, 46, 39);
+        }
+            
+        fieldset{
+            background-color :rgb(248, 246, 246);
+ 
+        }
+ 
+ 
+        .em{
+            color: rgba(88, 88, 88, 0.5);
+        }      
+        
+        li:nth-child(2n+1){
+            color: red;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>회원 가입을 환영합니다</h1>
+
+    <form>
+        <fieldset>
+        <legend>    사용자 정보</legend>
+            <ul>
+                <li><label for="">아이디 <input type="text" size="10" value="4글자" class="em"></label></li>
+                <li><label for="">이메일 <input type="email" value="asdf@google.com" class="em"></label></li>
+                <li><label for="">비밀번호 <input type="password" size="10"></label></li>
+                <li><label for="">비밀번호 확인 <input type="password" size="10"></label></li>
+            
+            </ul>
+        </fieldset>
+    
+    
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>  이벤트와 새로운 소식</legend>
+
+            <label for=""><input type="radio" name="event"> 메일 수신</label>
+            <lebel><input type="radio" name="event">메일 수신 안함</lebel>
+
+            </fieldset>
+    
+    
+
+    </form>
+    <br>
+    <input type="submit" value="가입하기" style="width : 100px; margin-left: 150px;">
+    <input type="submit" value="취소">
+
+
+   
+    
+     
+   
+
+
+
+</body>
+</html>

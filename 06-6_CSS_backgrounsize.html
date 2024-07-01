@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1200px;
+
+            border: 1px solid #000;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            background-image:url(images/Image20240522151717.jpg) ;
+            background-repeat: no-repeat;
+
+            border: 1px solid #cccaca;
+            float: left;
+            
+
+        }
+        /* 배경이미지 사이즈 범위 지정하기 */
+
+        #bg1{background-size : auto;}   /* 원래 배경 이미지 크기로 표시 */
+        #bg2{background-size : 200px;} /* 너비는 200px, 높이는 자동 계산  */
+        #bg3{background-size : 50%}
+        #bg4{background-size : 100% 100%;}
+        #bg5{background-size : contain;}
+        #bg6{background-size : cover;}
+
+
+
+    </style>
+</head>
+<body>
+    
+<div id="container">
+        <div class="box" id="bg1"></div> 
+        <div class="box" id="bg2"></div>
+        <div class="box" id="bg3"></div>
+        <div class="box" id="bg4"></div>
+        <div class="box" id="bg5"></div>
+       <div class="box" id="bg6"></div>
+</div>
+ 
+
+
+
+
+</body>
+</html>

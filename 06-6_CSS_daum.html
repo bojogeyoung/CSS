@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(233, 229, 229);
+        }
+
+        #wrap{
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+        }
+        
+        input{
+            width: 40%;
+            height: 40px;        
+            margin-left: 350px;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+
+        div {
+            border: 1px solid #c7c7c7;
+            border-radius: 10px;
+            background-color: #fff;
+            
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            border: none;
+            
+        }
+        .header, .top, #wrap{
+            border: none;
+        }
+     
+    
+
+        .leftbox{
+            width: 830px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .rightbox{
+            width: 330px;
+            float: right;
+
+            
+        }
+
+        .banner{
+            width: 100%;
+            height: 500px;
+            
+          }
+
+        .weather img{
+            width: 100%;
+        }
+
+        .top, .box{
+            margin-top: 20px;
+        }
+
+        .list1{
+            text-align: center;
+            height: 50px;
+           
+        }
+
+        .list1 li{
+            border: 1px solid #eee;
+            border-radius: 30px; 
+        }
+ 
+        .list1 li a{
+            
+            vertical-align: center;
+            margin-right: 10px ;
+            
+           
+        }
+
+        .list1 .icon{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+       }
+
+
+ 
+        .list1 li a img{
+            width: 20px;
+            height: 20px;
+           
+
+        }
+
+       .login{
+        margin-bottom: 20px;
+       }
+
+       .logbtn{
+        width: 320px;
+       }
+
+       p{
+        text-align: center;
+       }
+
+       .weather{
+        margin-bottom: 20px;
+       }
+
+       .bannerbox img{
+        width: 100%;
+       }
+
+       table tr td{
+        /* border: 1px solid #000; */
+
+       }
+
+       td img{
+        width: 100%;
+       }
+       td:nth-child(3n){
+        width: 300px;
+       }
+
+       span{
+        color: gray;
+       }
+ 
+       .banner img{
+        width: 100%;
+       }
+       #icon2{
+        width: 50px;
+       }
+
+       .list1 .txt{
+         vertical-align :top;
+         
+       }
+
+  
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+
+        <div class="header">
+
+             <input type="search" > 
+        </div>
+
+        <div class="top">
+            <ul class="list1">
+                <li><a href="#"><img src="images/5.png" alt="" class="icon"><span class="txt">지도</span></a></li>
+                <li><a href="#" ><img src="images/8.png" alt="" class="icon"><span class="txt">증권</span></a></li>
+                <li><a href="#"><img src="images/12.png" alt="" class="icon"><span class="txt">메일</span></a></li>
+                <li><a href="#"><img src="images/17.png" alt="" class="icon"><span class="txt">뉴스</span></a></li>
+                <li><a href="#"><img src="images/17.png" alt="" class="icon"><span class="txt">스포츠</span></a></li>
+                <li><a href="#"><img src="images/21.png" alt="" class="icon"><span class="txt">카페</span></a></li>
+                <li><a href="#"><img src="images/17.png" alt="" class="icon"><span class="txt">게임</span></a></li>
+                <li><a href="#"><img src="images/27.png" alt="" class="icon"><span class="txt">웹툰</span></a></li>
+                <li><a href="#"><img src="images/28.png" alt="" class="icon"><span class="txt">사전</span></a></li>
+                <li><a href="#"><img src="images/30.png" alt="" class="icon"><span class="txt">쇼핑</span></a></li>
+                <li><a href="#">···</a></li>
+            </ul>
+        </div>
+
+        <div class="box">
+
+            <div class="leftbox">
+
+                <div class="bannerbox">
+                    <a href="#"><img src="images/coex.jpg" alt=""></a>
+                </div>
+               
+               
+                <ul class="list2">
+                    <li><a href="#"><img src="images/15.png" alt="" id="icon2"></a>뉴스 ></li>
+                    <li><a href="#">주요 뉴스</a></li>
+                    <li><a href="#">추천</a></li>
+                    <li><a href="#">언론사</a></li>
+                    <li><a href="#">심층탐사</a></li>
+                    <li><a href="#">경제</a></li>
+                    <li><a href="#">라이브</a></li>
+                </ul>
+    
+    
+                <table class="news">
+                    <tbody>
+                      <tr>
+                            <td rowspan="3"><img src="images/25.jpg" alt=""></td>
+                            <td rowspan="3"><img src="images/25.jpg" alt=""></td>
+                            <td>속보 경찰.....</td>
+                        </tr>
+    
+    
+                        <tr>
+                            
+                            
+                            <td>김진표 "28일 본회의서 채상병 특검법…</td>
+                        </tr>
+    
+                        <tr>
+                            
+                             
+                            <td><a>당분간 학교....</a></td>
+                        </tr>
+    
+    
+                        <tr>
+                            <td><a>뉴스소식...ㅇㅇㅇㅇ</a></td>
+                            <td><a>김두규 변리사회장 “소송대리로..</a></td>   
+                            <td><a>싱가포르학교....</a></td>
+                        </tr>
+    
+                        <tr>
+                            <td><sapn>YTN</sapn></td>
+                            <td><span>뉴시스</span></td>   
+                            <td><a>MBC 앵커 "윤 대통령 자신이 특검...</a></td>
+                        </tr>
+    
+                        <!-- -->
+    
+                        <tr>
+                            <td rowspan="3"><img src="images/25.jpg" alt=""></td>
+                            <td rowspan="3"><img src="images/25.jpg" alt=""></td>
+                            <td>속보 경찰.....</td>
+                        </tr>
+    
+    
+                        <tr>
+                            
+                            
+                            <td>'오동운호'....</td>
+                        </tr>
+    
+                        <tr>
+                            
+                            
+                            <td>당분간 학교....</td>
+                        </tr>
+    
+    
+                        <tr>
+                            <td>뉴스소식...ㅇㅇㅇㅇ</td>
+                            <td>뉴스소식...ㅇㅇㅇㅇ</td>   
+                            <td>싱가포르학교....</td>
+                        </tr>
+    
+                        <tr>
+                            <td><span>YTN</span></td>
+                            <td><span>뉴시스</span></td>   
+                            <td>싱가포르학교....</td>
+                        </tr>
+    
+    
+    
+                    </tbody>
+    
+    
+    
+    
+                </table>
+    
+    
+    
+    
+    
+    
+            </div><!-- leftbox end -->
+    
+            <div class="rightbox">
+               
+       
+            <div class="login">   
+               
+                <p>이제 카카오계정으로 Daum을 이용해 주세요</p>
+          
+                <a href="#">
+                <img src="images/kakaologin.jpg" alt="kakaologin" class="logbtn">
+                </a>  
+         </div>   
+            
+         <div class="weather"><a href="#"><img src="images/weather.jpg" alt="weather"></a></div>
+    
+          
+
+          <div class="banner"><a href="#"> <img src="images/computer.jpg" alt=""></a></div>  
+
+ </div>
+
+
+
+        </div> <!-- rightbox -->
+
+
+
+
+
+
+
+
+
+
+    </div><!-- wrap end -->
+
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

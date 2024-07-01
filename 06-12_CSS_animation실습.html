@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+        .container {
+            text-align: center;
+            background-color: #e74c3c;
+            overflow: hidden;
+        }
+
+        .box {
+            display: inline-block;
+            height: 200px;
+            width: 33.3%;
+            float: left;
+            position: relative;
+            transition: all .2s ease;
+
+        }
+
+        .box p {
+            color: #777;
+            font-family: Lato, "Helvetica Neue";
+            font-weight: 300;
+            position: absolute;
+            font-size: 20px;
+            width: 100%;
+            height: 25px;
+            text-align: center;
+            bottom: 0px;
+            margin: 0;
+            top: 160px;
+            background-color: #fff;
+            opacity: 0;
+            text-transform: uppercase;
+            /* 모든글자를 대문자로 */
+            transition: all .2s ease;
+        }
+
+        .box:hover p {
+            bottom: 0;
+            top: 175px;
+            opacity: 1;
+            transition: all .2s ease;
+            z-index: 2;
+        }
+
+        @media (max-width: 700px) {
+            .box {
+                width: 50%;
+            }
+
+            .box:nth-child(2n-1) {
+                background-color: inherit;
+            }
+        }
+
+        .clock {
+            border-radius: 60px;
+            border: 3px solid #fff;
+            height: 80px;
+            width: 80px;
+            position: relative;
+            top: 28%;
+            /* 
+            top: -webkit-calc(50% - 43px);
+            top: calc(50% - 43px);
+            left: 35%;
+            left: -webkit-calc(50% - 43px);
+            left: calc(50% - 43px);
+   */
+        }
+
+        .clock:after {
+            content: "";
+            background-color: #fff;
+            position: absolute;    
+            top: 2px;
+            left: 48%;
+            height: 38px;
+            width: 4px;
+            border-radius: 5px;           
+            -webkit-transform-origin: 50% 97%;
+            transform-origin: 50% 97%;
+            -webkit-animation: grdAiguille 2s linear infinite;
+            animation: grdAiguille 3s linear infinite;
+
+        }
+
+        .clock:before{
+            content:"";
+            position: absolute;
+            background-color:#fff;
+            top:6px;
+            left: 48%;
+            height: 35px;
+            width: 4px;
+            border-radius: 5px;
+            
+        }
+
+        @-webkit-keyframes grdAiguille{
+            0%{
+                -webkit-transform:rotate(0deg);
+            }
+            100%{
+                -webkit-transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 참고 : https://poiemaweb.com/css3-animation -->
+
+
+
+    <div class="container">
+        <div class="box">
+            <div class="clock"></div>
+            <p>Clock</p>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

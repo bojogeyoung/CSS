@@ -1,0 +1,17 @@
+     h1{
+        display : inline-block;
+        color: #fff;
+        background-color: #000;
+        padding: 10px;  }  
+ 
+    
+
+    ul{
+        list-style : none;
+    }
+
+    li{
+        font-size: 1.2em;
+        line-height: 1.5;
+        color: blue;
+    }  

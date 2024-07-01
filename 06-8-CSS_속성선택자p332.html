@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+   <meta charset="UTF-8">
+    
+   <title>Document</title>
+    <style>
+      a{
+         text-decoration: none;
+      }
+      li{
+         list-style: none;
+      }
+      /* [속성 *=값] 일부 속성값이 일치하는 요소를 선택 */
+
+      a[href *= w3]{
+         background-color: blue;
+         color: white;
+      }
+
+      /* 
+      [class ~= a]{지정한 속성값이 포함된 요소(단어별)}
+
+      [title |=us]{지정한 속성값이 포함된 요소(하이픈 포함, 단어별)}
+         
+      [title ^= eng]{지정한 속성값으로 시작하는 요소}
+
+      [href $=xls]{지정한 속성값으로 끝나는 요소}
+
+      [href *=w3]{지정한 속성값의 일부가 일치하는 요소}
+
+
+
+       */
+
+    </style>
+ </head>
+ <body>
+   <p>(아래 링크 중에서 배경색이 파란색인 링크는 W3C 사이트로 연결됩니다.)</p>
+   <ul>
+      <li><a href="https://html.spec.whatwg.org/" target="_blank" >HTML표준안 사이트</a></li>
+      <li><a href="https://caniuse.com/" target="_blank">HTML 지원 여부 체크</a></li>
+      <li><a href="https://www.w3.org/TR/css3-mediaqueries" target="_blank">미디어쿼리</a></li>
+   </ul>
+
+ </body>
+ </html>

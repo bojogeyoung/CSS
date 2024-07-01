@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>3단 레이아웃 만들기</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing : border-box;
+
+        }
+
+        #container{
+            width: 1200px;
+            /* 내용 전체 너비 */
+            margin : 20px auto;
+            /* 내용을 화면 가운데 배치 하도록 좌우 마진을 auto로  */
+
+        }
+
+        #header{
+            width: 100%; /* 부모요소의 너비와 똑같게 */
+            height: 120px;
+            background-color: #acacac;
+        }
+
+        #sidebar1{
+            width: 250px;
+            height: 600px;
+            background-color : #e9e9e9;
+            float: left; 
+            /* float 속성을 사용 안하면 블록 요소로 한칸씩 순서대로 된다. 아니면 인라인 블록으로 옆으로 순서대로 놓을 수 있다?! */
+
+        }
+
+        #contents{
+            width: 800px;
+            height: 600px;
+            background-color : #f7f7f7;
+            float : left;
+        }
+
+        #sidebar2{
+            width: 150px;
+            height: 600px;
+            background-color : #e9e9e9;
+            float: left;
+            /* float: left; 앞에거 수치가 정확하다면 가능, 아님 right로 해도 무방?*/
+
+
+        }
+
+
+
+        #footer{
+            width: 100%; /* 부모요소의 너비와 똑같게 */
+            height: 100px;
+            background-color: #888;
+            clear: left;
+            /* both는 float left와 right를 해제한다.  */
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1>사이트 제목</h1>
+        </header>
+    <aside id="sidebar1">
+        <h2>사이드바</h2>
+    </aside>    
+    <section id="contents">
+        <h2>본문</h2>
+    </section>
+    <aside id="sidebar2">
+        <h2>사이드바</h2>
+    </aside> 
+    <footer id="footer">
+        <h2>푸터</h2>
+    </footer>
+
+
+
+
+    </div>
+ 
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+     
+    <title>Document</title>
+    <style>
+        /* 1. 요소의 사용 여부에 따라 스타일을 적용하는 :enavled,(해당 요소가 사용할 수 있는 상태일 때 스타일 적용) 
+                                                     :disabled 가상클래스 선택자(예 ㅣ textarer를 사용해 회원 약관을 보여줄때 사용자가 입력할 수 없도록 사용)
+        
+            2. 선택한 항목의 스타일을 적용하는 :checked가상클래스 선택자
+            3. 특정요소를 제외하고 스타일을 적용하는 :not가상클래스 선택자
+
+      */
+         input:checked + label{
+            color : red;
+            font-weight: bold;
+
+
+        }
+
+        .new::after{
+            content:"SALE";
+            font-size:x-samll;
+            padding: 2px 4px;
+            margin: 0 10px;
+            border-radius: 2px;
+            color: #fff;
+            background-color: #f00;
+
+        }
+
+    </style>
+ </head>
+ <body>
+    <ul>
+        <li ><input type="radio" name="room" id="basic">
+             <label for="basic" >기본형(최대 2인)</label>   
+        </li>
+        <li><input type="radio" name="room" id="family">
+            <label for="family">가족형(최대8인)</label>
+
+        </li>
+    </ul>
+
+    <div class="container">
+    <h1>제품목록</h1>
+    <ul>
+        <li class="new" >제품 1</li>
+        <li>제품 2</li>
+        <li>제품 3</li>
+        <li class="new">제품 4</li>
+    </ul>
+    </div>
+ </body>
+ </html>

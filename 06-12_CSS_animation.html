@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+     
+    <title>Document</title>
+    <style>
+
+         
+        .box{
+
+            width: 100px;
+            height: 100px;
+        }
+        #box1{
+ 
+            background-color: #4cff00;
+            border: 1px solid transparent;
+            animation-name : shape; /* 애니메이션 지정 */
+            animation-duration: 3s;
+        }
+
+        #box2{
+            background-color: purple;
+            border: 1px solid transparent;
+            animation-name : rotate;
+            animation-duration: 5s;
+        }
+
+         @keyframes shape{
+            from { border: 1px solid transparent; /* 투명테두리에서  */ }    
+            to    {
+                border: 1px solid #000; /* 검은테두리로 변경 */
+                border-radius : 50%;  /* 45도까지 회전하기 */
+            }
+        }
+        /* form to 또는 0%, 100%가능 */
+        @keyframes rotate{
+            0%{transform :rotate(0deg);}
+            100%{transform: rotate(45deg);}
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- 참고 : https://poiemaweb.com/css3-animation -->
+   
+
+
+
+
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+
+
+    
+</body>
+</html>

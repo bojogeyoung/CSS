@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     
+    <title> position_예제</title>
+
+    <style>
+        *{
+            box-sizing : border-box;
+            margin: 20px auto;
+            
+            
+        }
+
+        body{
+           
+            background: rgba(240, 184, 228, 0.5); 
+            
+            
+           
+           
+        }
+        #back{
+            width: 1000px;
+            height: 1000px;
+           
+        }
+
+        #contents{
+            background : url("images/beardoll.jpg") no-repeat;
+            background-size : cover;
+            border: 1px solid #eee;
+            border-radius : 50%;
+            box-shadow: 10px 20px 50px #000;
+            width : 300px;
+            height: 300px;
+            position: relative;
+           
+        
+        }  
+        
+        h2{
+            color: pink;
+            position: absolute;
+            bottom : 30px;
+            left: 80px;
+            text-shadow : 1px  2px 10px #000;
+
+
+        }
+ 
+
+ 
+
+
+    </style>
+</head>
+<body>
+
+   <div id="back">
+         <div id="contents"> 
+           
+            <h2>곰돌이 인형</h2>
+         </div>
+
+        
+
+         
+   </div id="back">
+    
+</body>
+</html>
